@@ -53,6 +53,9 @@
                                     <constraint firstAttribute="height" constant="348" id="xxG-Vx-SQ4"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="2xV-XA-FyF">
+                                <rect key="frame" x="197" y="252" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KfT-cl-8Zt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -60,9 +63,15 @@
                             <constraint firstItem="8AW-XB-Yb2" firstAttribute="centerX" secondItem="KfT-cl-8Zt" secondAttribute="centerX" id="4wf-Oh-eXp"/>
                             <constraint firstItem="8AW-XB-Yb2" firstAttribute="top" secondItem="KfT-cl-8Zt" secondAttribute="top" id="HCJ-Nt-kcE"/>
                             <constraint firstItem="8AW-XB-Yb2" firstAttribute="width" secondItem="KfT-cl-8Zt" secondAttribute="width" id="Mme-S9-6bS"/>
+                            <constraint firstItem="2xV-XA-FyF" firstAttribute="centerX" secondItem="8AW-XB-Yb2" secondAttribute="centerX" id="e5a-GO-Anh"/>
+                            <constraint firstItem="2xV-XA-FyF" firstAttribute="centerY" secondItem="8AW-XB-Yb2" secondAttribute="centerY" id="xGx-bd-xr9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tt8-lA-FQv"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="2xV-XA-FyF" id="a7R-lA-Tou"/>
+                        <outlet property="imageView" destination="8AW-XB-Yb2" id="yy5-hf-v4H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egi-Ub-kJg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
